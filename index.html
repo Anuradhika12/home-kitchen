@@ -1,4 +1,4 @@
-/* SmartHomeGuide — site search */
+/* SmartHomeGuide â€” site search */
 (function () {
   "use strict";
 
@@ -6,10 +6,10 @@
     { title: "Best Air Fryers for Small Kitchens", url: "articles/air-fryers.html", cat: "Buying Guide", excerpt: "Capacity, footprint, and features that matter when counter space is limited." },
     { title: "How to Choose the Right Robot Vacuum", url: "articles/robot-vacuums.html", cat: "Buying Guide", excerpt: "Navigation, suction, self-emptying docks, and pet hair explained." },
     { title: "Best Electric Kettles for Everyday Use", url: "articles/electric-kettles.html", cat: "Buying Guide", excerpt: "Gooseneck vs. standard, temperature control, materials, and speed." },
-    { title: "How to Choose a Coffee Maker", url: "articles/coffee-makers.html", cat: "Buying Guide", excerpt: "Drip, pour-over, espresso, and pod — match the brewer to your routine." },
+    { title: "How to Choose a Coffee Maker", url: "articles/coffee-makers.html", cat: "Buying Guide", excerpt: "Drip, pour-over, espresso, and pod â€” match the brewer to your routine." },
     { title: "Kitchen Storage Ideas for Small Spaces", url: "articles/kitchen-storage.html", cat: "Kitchen", excerpt: "Vertical, magnetic, and hidden storage that reclaims your counters." },
-    { title: "Smart Home Devices Worth Buying", url: "articles/smart-home-devices.html", cat: "Smart Home", excerpt: "The devices that genuinely make daily life easier — and the ones to skip." },
-    { title: "How to Choose a Blender for Your Kitchen", url: "articles/blenders.html", cat: "Buying Guide", excerpt: "Jug vs. personal vs. immersion — which blender style fits your habits." },
+    { title: "Smart Home Devices Worth Buying", url: "articles/smart-home-devices.html", cat: "Smart Home", excerpt: "The devices that genuinely make daily life easier â€” and the ones to skip." },
+    { title: "How to Choose a Blender for Your Kitchen", url: "articles/blenders.html", cat: "Buying Guide", excerpt: "Jug vs. personal vs. immersion â€” which blender style fits your habits." },
     { title: "Best Food Storage Containers for Meal Prep", url: "articles/food-storage-containers.html", cat: "Kitchen", excerpt: "Glass vs. plastic, leak-proof lids, and stackability." },
     { title: "Home & Living Category", url: "home.html", cat: "Category", excerpt: "Cleaning, organization, and everyday home essentials." },
     { title: "Kitchen Category", url: "kitchen.html", cat: "Category", excerpt: "Appliances, cookware, storage, and prep tools." },
@@ -74,9 +74,9 @@
   });
   input.addEventListener("input", function () { render(input.value); });
 })();
-js/main.js — paste as-is:
+js/main.js â€” paste as-is:
 JavaScript
-/* SmartHomeGuide — main.js: mobile nav + form handling */
+/* SmartHomeGuide â€” main.js: mobile nav + form handling */
 (function () {
   "use strict";
 
@@ -113,7 +113,7 @@ JavaScript
     });
   }
 
-  // Contact form (front-end demo only — wire to your backend/form service)
+  // Contact form (front-end demo only â€” wire to your backend/form service)
   var cForm = document.getElementById("contactForm");
   if (cForm) {
     cForm.addEventListener("submit", function (e) {
@@ -148,7 +148,7 @@ def product(p):
     li = lambda xs, cls: "".join("<li>%s</li>" % x for x in xs)
     return """
 <article class="product-card" id="%(id)s">
-  <div class="card-media"><img src="../images/%(img)s" alt="%(name)s — demo product image" loading="lazy" width="600" height="450"></div>
+  <div class="card-media"><img src="../images/%(img)s" alt="%(name)s â€” demo product image" loading="lazy" width="600" height="450"></div>
   <div class="card-body">
     <div class="product-head"><h3>%(name)s</h3><span class="badge badge--amber">Demo data</span></div>
     <p><span class="badge">%(best)s</span></p>
@@ -184,7 +184,7 @@ def build(a):
                    % (p["name"], p["bestshort"], p["key"], stars(p["rating"]), p["price"]) for p in a["products"])
     table = """
 <h2 id="our-picks">Our Picks at a Glance</h2>
-<p>Demo placeholder entries shown to demonstrate our format — each will be replaced with researched picks as coverage matures.</p>
+<p>Demo placeholder entries shown to demonstrate our format â€” each will be replaced with researched picks as coverage matures.</p>
 <div class="table-wrap" role="region" aria-label="Product comparison table" tabindex="0">
 <table class="compare-table"><thead><tr><th scope="col">Product</th><th scope="col">Best For</th><th scope="col">Key Feature</th><th scope="col">Rating</th><th scope="col">Price Range</th></tr></thead>
 <tbody>%s</tbody></table></div>
@@ -205,10 +205,10 @@ def build(a):
         a["short"], a["desc"], BASE, a["img"], a["pubiso"], a["upiso"], BASE, a["file"])
     html = """<!DOCTYPE html><html lang="en"><head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>%s — SmartHomeGuide</title><meta name="description" content="%s">
+<title>%s â€” SmartHomeGuide</title><meta name="description" content="%s">
 <link rel="canonical" href="%s/articles/%s">
 <meta property="og:type" content="article"><meta property="og:site_name" content="SmartHomeGuide">
-<meta property="og:title" content="%s — SmartHomeGuide"><meta property="og:description" content="%s">
+<meta property="og:title" content="%s â€” SmartHomeGuide"><meta property="og:description" content="%s">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="../css/style.css">
 <link rel="icon" href="data:image/svg+xml,%%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%%3E%%3Crect width='32' height='32' rx='8' fill='%%232e7d5b'/%3E%%3C/svg%3E">
@@ -222,14 +222,14 @@ def build(a):
 <button class="icon-btn nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mainNav"><span></span><span></span><span></span></button>
 </div></div></header>
 <div class="search-overlay" id="searchOverlay" role="dialog" aria-modal="true" aria-label="Site search">
-<div class="search-panel"><input type="search" id="searchInput" placeholder="Search guides, reviews, and categories…" aria-label="Search articles" autocomplete="off">
+<div class="search-panel"><input type="search" id="searchInput" placeholder="Search guides, reviews, and categoriesâ€¦" aria-label="Search articles" autocomplete="off">
 <div class="search-results" id="searchResults" role="listbox"></div></div></div>
 <main id="main">
 <nav class="breadcrumbs container" style="padding-top:18px" aria-label="Breadcrumb"><ol><li><a href="../index.html">Home</a></li><li><a href="../buying-guides.html">%s</a></li><li aria-current="page">%s</li></ol></nav>
 <div class="container article-layout" style="padding-top:10px"><article class="article-content" style="grid-column:1/-1;max-width:860px">
 <span class="badge">%s</span><h1 style="margin-top:10px">%s</h1>
 <div class="article-meta"><span class="author-chip"><span class="author-avatar" aria-hidden="true">SH</span><span>By <strong>SmartHomeGuide Editorial Team</strong></span></span>
-<span>Published %s</span><span>·</span><span>Updated %s</span><span>·</span><span>%s read</span></div>
+<span>Published %s</span><span>Â·</span><span>Updated %s</span><span>Â·</span><span>%s read</span></div>
 <img class="featured" src="../images/%s" alt="%s" width="800" height="500">
 <p class="lead">%s</p>
 <aside class="quick-answer" aria-label="Quick answer"><h2>Quick Answer</h2><p>%s</p></aside>
@@ -245,8 +245,8 @@ def build(a):
 <div class="related-grid">%s</div></div></section>
 </main>
 <footer class="site-footer"><div class="container"><div class="footer-bottom" style="border:none;padding:24px 0">
-<span>© 2026 SmartHomeGuide. All rights reserved.</span><span>SmartHomeGuide participates in the Amazon Associates Program.</span>
-<span><a href="../affiliate-disclosure.html">Affiliate Disclosure</a> · <a href="../privacy-policy.html">Privacy</a> · <a href="../terms.html">Terms</a> · <a href="../contact.html">Contact</a></span>
+<span>Â© 2026 SmartHomeGuide. All rights reserved.</span><span>SmartHomeGuide participates in the Amazon Associates Program.</span>
+<span><a href="../affiliate-disclosure.html">Affiliate Disclosure</a> Â· <a href="../privacy-policy.html">Privacy</a> Â· <a href="../terms.html">Terms</a> Â· <a href="../contact.html">Contact</a></span>
 </div></div></footer>
 <script src="../js/search.js" defer></script><script src="../js/main.js" defer></script>
 </body></html>""" % (a["short"], a["desc"], BASE, a["file"], a["short"], a["desc"], jsonld, navlis,
